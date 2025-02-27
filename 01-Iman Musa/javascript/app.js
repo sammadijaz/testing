@@ -123,5 +123,5 @@ for (let i = 0; i < letters.length; i++){
 let myName = "Sammad Ijaz";
 
 for (let i = 0; i < myName.length; i++){
-    console.log(myName[i]);
+    console.log(`My Name ${i}: `,myName[i]);
 }
