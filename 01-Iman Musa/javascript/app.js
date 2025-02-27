@@ -92,7 +92,7 @@ console.log("while loop finished");
 
 // actual task:
 
-for(let i = 1; i < 16; i++){
+for(let i = 1; i <= 15; i++){
     
     if (i % 5 === 0){
         console.log(`${i} is divisble by 5, ASAP Frontend`);
