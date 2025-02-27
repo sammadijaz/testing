@@ -1,10 +1,5 @@
 function main (){
 
-document.querySelector("body").style.backgroundColor = "#262626"
-document.querySelector("body").style.color = "#fff"
-document.querySelector("body").style.fontFamily = "sans-serif"
-document.querySelector("body").style.margin = "50px"
-
 // String and accessing its characters
 console.log("Sam"[0]);
 console.log("Sam"[1]);
@@ -137,5 +132,17 @@ function greetUser(user){
 
 greetUser("Sam")
 greetUser("Emma")
+
+
+
+
+
+
+
+
+document.querySelector("body").style.backgroundColor = "#262626";
+document.querySelector("body").style.color = "#fff";
+document.querySelector("body").style.fontFamily = "sans-serif";
+document.querySelector("body").style.margin = "50px";
 
 }
