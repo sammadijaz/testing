@@ -159,16 +159,27 @@ console.log(conversion(2));
 // array methods
 
 // filter
-
 let numbers = [10, 12, 3, 2, 5, 12, 42, 4]
 
-numbers.filter((eachElementOfArray)=>{
+let filterTest = numbers.filter((eachElementOfArray)=>{
     console.log(eachElementOfArray);
+    
+    // returning undefined hence no element will be added in the filtered array
+})
+console.log(filterTest); // Output: []
+
+
+// filtering array and storing elements (less than 5)
+let filteredArray = numbers.filter((elements)=>{
+    if(elements < 5){
+        return true
+    }
+    else{
+        return false;
+    }
 })
 
-
-
-
+console.log(`Filtered Elements less than 5 are: `,filteredArray); // Output: (3) [3, 2, 4]
 
 
 
