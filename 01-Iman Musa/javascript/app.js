@@ -58,9 +58,9 @@ console.log("for loop finished");
 // printing from 0 to 10 with while loop
 let num = 0;
 
-while(num < 10){
-    num++; // num = num + 1
+while(num <= 10){
     console.log(`While loop: ${num}`);
+    num++; // num = num + 1
 }
 
 console.log("while loop finished");
