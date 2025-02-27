@@ -117,3 +117,11 @@ let letters = "ASAP Frontend";
 for (let i = 0; i < letters.length; i++){
     console.log(letters[i]);
 }
+
+// my version
+
+let myName = "Sammad Ijaz";
+
+for (let i = 0; i < myName.length; i++){
+    console.log(myName[i]);
+}
