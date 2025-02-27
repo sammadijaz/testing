@@ -133,6 +133,40 @@ function greetUser(user){
 greetUser("Sam")
 greetUser("Emma")
 
+// task
+
+// A func to go $USD TO $AUD using AUD = USD * 1.5
+
+function conversion (USD){
+    let AUD = USD * 5;
+    console.log(AUD);
+    
+    // will be returning undefined
+}
+
+conversion(2);
+
+
+// same with arrow function and return keyword
+
+let convert = (USD) =>{
+    return USD * 1.5;
+}
+
+console.log(conversion(2));
+
+
+// array methods
+
+// filter
+
+let numbers = [10, 12, 3, 2, 5, 12, 42, 4]
+
+numbers.filter((eachElementOfArray)=>{
+    console.log(eachElementOfArray);
+})
+
+
 
 
 
