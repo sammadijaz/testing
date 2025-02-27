@@ -171,15 +171,49 @@ console.log(filterTest); // Output: []
 
 // filtering array and storing elements (less than 5)
 let filteredArray = numbers.filter((elements)=>{
-    if(elements < 5){
-        return true
-    }
-    else{
-        return false;
-    }
+    return elements < 5;
 })
 
-console.log(`Filtered Elements less than 5 are: `,filteredArray); // Output: (3) [3, 2, 4]
+console.log(`Filtered Elements less than 5 are: `, filteredArray); // Output: (3) [3, 2, 4]
+
+
+// task
+
+// filter 18 or 18+ people
+
+let ageOfPeople = [12, 14, 19, 20, 25, 45, 23, 16, 18, 22]
+
+let filteredAges = ageOfPeople.filter(ages =>{
+    return ages >= 18;
+})
+
+console.log(`These are 18 or 18+ ages: `, filteredAges);
+
+
+// task do this with for loop and without filter
+
+let ageOfPeople2 = [12, 14, 19, 20, 25, 45, 23, 16, 18, 22]
+
+for(i = 0; i < ageOfPeople2.length; i++){
+    let filtered = [];
+
+    if(ageOfPeople2[i] > 18){
+        filtered.push(ageOfPeople2)
+        console.log(filtered);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
