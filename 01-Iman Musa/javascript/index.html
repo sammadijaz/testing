@@ -4,10 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        html, body {
+            height: 100%;
+            width: 100%;
+            background-color: #262626;
+            color: #ffffff;
+        }
+
+        h1{
+            text-align: center;
+            margin: 20px;
+            text-decoration: underline;
+            font-size: 50px;
+        }
+
+        button{
+            padding: 30px;
+            font-size: 30px;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 2px solid #cc1313;
+            transition: 300ms;
+
+            /* animation: upDown 2s infinite alternate-reverse; */
+        }
+
+        button:hover{
+            padding: 40px 50px 40px 50px;
+            font-size: 40px;
+            border-radius: 20px;
+            border: 2px solid green;
+
+            animation: none;
+        }
+
+        button:active{
+            background-color: #bfe7cf;
+            padding: 35px;
+            font-size: 35px;
+        }
+
+        @keyframes upDown{
+            0%{
+                top: 50%;
+            }
+
+            100%{
+                top: 60%
+            }
+        }
+
+
+    </style>
 </head>
 <body>
     <h1>Javascript</h1>
 
+        <button onclick="execute()">
+            Click Here
+        </button>
+
+
     <script src="app.js"></script>
+    <script>
+     function execute(){
+        main();
+     }
+    </script>
 </body>
 </html>

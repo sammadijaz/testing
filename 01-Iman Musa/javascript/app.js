@@ -1,3 +1,5 @@
+function main (){
+
 document.querySelector("body").style.backgroundColor = "#262626"
 document.querySelector("body").style.color = "#fff"
 document.querySelector("body").style.fontFamily = "sans-serif"
@@ -124,4 +126,16 @@ let myName = "Sammad Ijaz";
 
 for (let i = 0; i < myName.length; i++){
     console.log(`My Name ${i}: `,myName[i]);
+}
+
+
+// functions
+
+function greetUser(user){
+    console.log(`Hello Dear ${user}!`);
+}
+
+greetUser("Sam")
+greetUser("Emma")
+
 }
