@@ -242,11 +242,37 @@ let usToAud = usdArray.map((element) => {
     return element * 1.5;
 })
 
-console.log(usToAud); // Output: (4) [15, 30, 150, 75]
+console.log(`Using map method: `,usToAud); // Output: (4) [15, 30, 150, 75]
 //Done!
 
 
+// now without map method
 
+// using for
+let withoutArray = [];
+
+for(let i = 0; i < usdArray.length; i++){
+    withoutArray.push(usdArray[i] * 1.5)
+}
+
+console.log(`Without using map method: `,withoutArray); // Output: (4) [15, 30, 150, 75]
+
+
+// using forEach
+// usdArray.forEach(element => {
+//     withoutArray.push(element * 1.5);
+// });
+
+// console.log(withoutArray); // Output: (4) [15, 30, 150, 75]
+
+// using filter
+// usdArray.filter((element)=>{
+//     if(element > 0){
+//         withoutArray.push(element * 1.5);
+//     }
+// })
+
+// console.log(withoutArray); // Output: (4) [15, 30, 150, 75]
 
 
 
