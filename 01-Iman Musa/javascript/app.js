@@ -218,8 +218,32 @@ console.log(`Challenge Completed: `, filtered);
 // console.log(filtered);
 
 
+// map method
+
+// map method loops on to the array like forEach and is used when we need to convert array elements into something else. It changes them to whatever we return. It is non-mutable method which does not change our original array.
+
+let exampleArray1 = [1, 2, 3, 4, 5]
+
+// non-mutable hence storing in a varible
+let mapExample = exampleArray1.map((element) => {
+    return null;
+})
+
+console.log(mapExample); // Output: (5) [null, null, null, null, null]
 
 
+// task
+
+// convert each element in an array from USD to AUD
+
+usdArray = [10, 20, 100, 50];
+
+let usToAud = usdArray.map((element) => {
+    return element * 1.5;
+})
+
+console.log(usToAud); // Output: (4) [15, 30, 150, 75]
+//Done!
 
 
 
