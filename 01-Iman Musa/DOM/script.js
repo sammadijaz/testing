@@ -33,3 +33,24 @@ document.querySelector(".heading2").innerHTML += " | Adding after the change "
 function changeColor (){
     document.querySelector("button").style.backgroundColor = "green"
 }
+
+
+// Change class names
+
+// access classes
+console.log(document.querySelector(".sidebar").classList);
+
+// changing classes
+document.querySelector(".sidebar").classList.add("hello1");
+// toggle is better bcz on clicking again it removes the class while add does not
+document.querySelector(".sidebar").classList.toggle("hello2");
+
+console.log(document.querySelector(".sidebar").classList);
+
+// toggle sidebar
+
+function toggleSidebar(){
+    document.querySelector(".sidebar").classList.toggle("openSidebar");
+}
+
+// now on clicking the button, it toggles the sidebar by giving it the class and upon clicking again removes it to send it back.
