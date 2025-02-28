@@ -138,13 +138,14 @@ greetUser("Emma")
 // A func to go $USD TO $AUD using AUD = USD * 1.5
 
 function conversion (USD){
-    let AUD = USD * 5;
+    let AUD = USD * 1.5;
     console.log(AUD);
     
     // will be returning undefined
 }
 
-conversion(2);
+conversion(100);
+console.log(conversion(2));
 
 
 // same with arrow function and return keyword
@@ -153,7 +154,7 @@ let convert = (USD) => {
     return USD * 1.5;
 }
 
-console.log(conversion(2));
+console.log(convert(100));
 
 
 // array methods
@@ -342,9 +343,6 @@ console.log(taskArray);
 
 console.log(`Welcome ${taskArray[0].name}, your email is ${taskArray[0].email}`);
 console.log(`Welcome ${taskArray[1].name}, your email is ${taskArray[1].email}`);
-
-
-
 
 
 
