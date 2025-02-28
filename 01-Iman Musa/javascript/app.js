@@ -265,6 +265,7 @@ console.log(`Without using map method: `,withoutArray); // Output: (4) [15, 30,
 
 // console.log(withoutArray); // Output: (4) [15, 30, 150, 75]
 
+
 // using filter
 // usdArray.filter((element)=>{
 //     if(element > 0){
@@ -273,6 +274,75 @@ console.log(`Without using map method: `,withoutArray); // Output: (4) [15, 30,
 // })
 
 // console.log(withoutArray); // Output: (4) [15, 30, 150, 75]
+
+
+
+// Objects
+
+let users = [
+    {
+        name: "Sam",
+        age: 19,
+        email: "sam@gmail.com"
+    },
+    {
+        name: "Nina",
+        age: 18,
+        email: "nina@gmail.com"
+    },
+    {
+        name: "Anna",
+        age: 20,
+        email: "anna@gmail.com"
+    }
+];
+
+// acessing objects
+console.log(users[0]);
+console.log(users[users.length -1]);
+
+console.log(users[0].name);
+console.log(users[0].name[0]);
+console.log(users[0].name[1]);
+console.log(users[0].name[2]);
+console.log(users[0].age);
+
+// my stuff
+// let userTest = {
+//     name: prompt("Enter your name: "),
+//     age: Number(prompt("Ener your age: "))
+// }
+
+// console.log(userTest);
+
+
+// task
+
+// create a function that accepts parameters for the sign up function.....
+
+let taskArray = [];
+
+let taskFunc = (email, password, name, discord, subscription, lessonsCompleted) => {
+    let userObj = {
+        name: name,
+        email: email,
+        password: password,
+        discord: discord,
+        subscription: subscription,
+        lessonsCompleted: lessonsCompleted
+    }
+
+    taskArray.push(userObj)
+}
+
+taskFunc("sam@gmail.com", 123, "Sam", "samcodes", true, [1, 2, 3] )
+taskFunc("Nina@gmail.com", 456, "Nina", "ninacodes", false, [1, 2] )
+
+console.log(taskArray);
+
+console.log(`Welcome ${taskArray[0].name}, your email is ${taskArray[0].email}`);
+console.log(`Welcome ${taskArray[1].name}, your email is ${taskArray[1].email}`);
+
 
 
 
