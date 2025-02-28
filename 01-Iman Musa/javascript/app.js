@@ -203,9 +203,20 @@ for(i = 0; i < ageOfPeople2.length; i++){
     }
 }
 
-console.log(filtered);
+console.log(`Challenge Completed: `, filtered);
 
 // Damn this was amazing!
+
+
+// Doing the same thing with forEach loop on my own
+
+// ageOfPeople2.forEach((i) => {
+//     if(i >= 18){
+//         filtered.push(i)
+//     }
+// })
+// console.log(filtered);
+
 
 
 
