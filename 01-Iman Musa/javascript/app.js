@@ -149,7 +149,7 @@ conversion(2);
 
 // same with arrow function and return keyword
 
-let convert = (USD) =>{
+let convert = (USD) => {
     return USD * 1.5;
 }
 
@@ -194,14 +194,19 @@ console.log(`These are 18 or 18+ ages: `, filteredAges);
 
 let ageOfPeople2 = [12, 14, 19, 20, 25, 45, 23, 16, 18, 22]
 
-for(i = 0; i < ageOfPeople2.length; i++){
-    let filtered = [];
+let filtered = [];
 
-    if(ageOfPeople2[i] > 18){
-        filtered.push(ageOfPeople2)
-        console.log(filtered);
+for(i = 0; i < ageOfPeople2.length; i++){
+
+    if(ageOfPeople2[i] >= 18){
+        filtered.push(ageOfPeople2[i])
     }
 }
+
+console.log(filtered);
+
+// Damn this was amazing!
+
 
 
 
