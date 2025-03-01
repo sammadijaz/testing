@@ -51,6 +51,8 @@ console.log(document.querySelector(".sidebar").classList);
 
 function toggleSidebar(){
     document.querySelector(".sidebar").classList.toggle("openSidebar");
+    
+    console.log(document.querySelector(".sidebar").classList); //displays change on console in real time
 }
 
 // now on clicking the button, it toggles the sidebar by giving it the class and upon clicking again removes it to send it back.
