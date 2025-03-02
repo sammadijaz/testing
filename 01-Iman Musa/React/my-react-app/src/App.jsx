@@ -13,13 +13,21 @@ function App() {
       <Heading />
       {/* Done */}
 
-      <Todo />
-      <Todo />
-      <Todo />
+      {/* learning about props now */}
+      <Todo modifiedTask="Continue React Crash Course" description="Do as much as you can"/>
+
+      <Todo 
+      modifiedTask="Commit code"
+      description="With a good description"
+      />
+      <Todo 
+      modifiedTask="Push code"
+      description="Not much to say here"
+      />
       
       {/* Task 
       create popup component and apply styles from google drive*/}
-      <Popup />
+      {/* <Popup /> */}
       {/* Done */}
 
 
