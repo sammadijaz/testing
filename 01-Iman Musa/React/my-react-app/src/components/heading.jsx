@@ -1,6 +1,6 @@
 function Heading (){
     return (
-        <h1>THIS IS MY TODO LIST</h1>
+        <h1 className="heading">THIS IS MY TODO LIST</h1>
     )
 }
 
