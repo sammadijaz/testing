@@ -20,9 +20,9 @@ function Todo ({ modifiedTask, description }){
         <h2>{ modifiedTask }</h2>
         <p>{ description }</p>
         <button
-        onClick={()=>{
+        onClick={() => {
             // console.log(`Delete '${modifiedTask}' Task?`);
-            deleteTask(); // we use either of the methods
+            deleteTask(); // we can use either of the methods
         }}
         >Mark Finish</button>
         </div>
