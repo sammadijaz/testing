@@ -12,7 +12,7 @@ function Todo ({ modifiedTask, description }){
     
     
     function deleteTask (){
-        console.log(`Delete '${modifiedTask}' Task?`);
+        console.log(`Finish '${modifiedTask}' Task?`);
     };
 
     return (

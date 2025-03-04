@@ -13,6 +13,15 @@ function App() {
       <Heading />
       {/* Done */}
 
+      <div className="inputDiv">
+        <label htmlFor="inputTask">Enter your task: </label><br />
+        <input type="text" name="inputTask" id="inputTask" onChange = {(event) => {
+          console.log(event.target.value);
+        }} />
+        
+        <button type="submit">Make Task</button>
+      </div>
+
       {/* learning about props now */}
       <Todo modifiedTask="Continue React Crash Course" description="Do as much as you can"/>
 
@@ -29,7 +38,7 @@ function App() {
       create popup component and apply styles from google drive*/}
       {/* Task
       make the span in popup dynamic */}
-      <Popup custom="ARE YOU ACTUALLY SURE?!??"/>
+      {/* <Popup custom="ARE YOU ACTUALLY SURE?!??"/> */}
       {/* Done */}
       {/* Done */}
 
