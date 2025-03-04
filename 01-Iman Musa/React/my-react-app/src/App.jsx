@@ -29,7 +29,7 @@ function App() {
       create popup component and apply styles from google drive*/}
       {/* Task
       make the span in popup dynamic */}
-      {/* <Popup custom="ARE YOU ACTUALLY SURE?!??"/> */}
+      <Popup custom="ARE YOU ACTUALLY SURE?!??"/>
       {/* Done */}
       {/* Done */}
 
