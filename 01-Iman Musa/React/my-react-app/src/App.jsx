@@ -4,6 +4,13 @@ import Heading from './components/heading'
 import Popup from './components/popup'
 
 function App() {
+  // useState()
+  let popupOpen = false;
+  function togglePopup(){
+    popupOpen = !popupOpen;
+    console.log(popupOpen);
+  }
+  // This won't trigger our popup because they are regular javascript variables and they dont check and re-render when variable changes 
 
   return (
     <>
@@ -19,7 +26,7 @@ function App() {
           console.log(event.target.value);
         }} />
         
-        <button type="submit">Make Task</button>
+        <button type="submit" onClick={togglePopup} >Make Task</button>
       </div>
 
       {/* learning about props now */}
@@ -38,7 +45,13 @@ function App() {
       create popup component and apply styles from google drive*/}
       {/* Task
       make the span in popup dynamic */}
-      {/* <Popup custom="ARE YOU ACTUALLY SURE?!??"/> */}
+      { popupOpen === true ? <Popup custom="ARE YOU ACTUALLY SURE?!??"/> : null }
+      {/* 
+      In react if you have 'null' on the second conditon in ternary condition then you can redude the statement with && operator.
+      
+      Here is reduced version of statment written above:
+      { popupOpen && <Popup custom="ARE YOU ACTUALLY SURE?!??"/> }
+      */}
       {/* Done */}
       {/* Done */}
 

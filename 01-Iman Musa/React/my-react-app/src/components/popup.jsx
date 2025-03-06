@@ -22,8 +22,18 @@ function Popup({ custom }){
         <div className="popup">
             <span>{ custom }</span>
             <div className="popup__btns">
-                <button className="popup__btn" onClick={() =>{clickedConfirm()}} >Confirm</button>
-                <button className="popup__btn popup__btn--cancel" onClick={() =>{clickedCancel()}} >Cancel</button>
+                <button 
+                    className="popup__btn" 
+                    onClick = {() => clickedConfirm()}
+                >
+                    Confirm
+                </button>
+                <button 
+                    className="popup__btn popup__btn--cancel" 
+                    onClick = {() => clickedCancel()}
+                >   
+                    Cancel
+                </button>
             </div>
         </div><div className="backdrop"></div>
 

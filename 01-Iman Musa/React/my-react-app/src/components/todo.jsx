@@ -6,7 +6,7 @@ function Todo ({ modifiedTask, description }){
     
     // in function parameter you can write "{ modifiedTask }" instead aswell to destructre the object, before I wrote "props.modifiedTask"
     // console.log(typeof props); // Object
-    // (in order for the ABOVE commented code to work, replace {modifiedTask} in parameter with "props")
+    // (in order for the ABOVE commented code to work, replace { modifiedTask } in parameter with "props")
     
     // console.log(modifiedTask);
     
@@ -20,11 +20,12 @@ function Todo ({ modifiedTask, description }){
         <h2>{ modifiedTask }</h2>
         <p>{ description }</p>
         <button
-        onClick={() => {
+        onClick = {() => {
             // console.log(`Delete '${modifiedTask}' Task?`);
             deleteTask(); // we can use either of the methods
         }}
-        >Mark Finish</button>
+        >Mark Finish
+        </button>
         </div>
     )
 }
