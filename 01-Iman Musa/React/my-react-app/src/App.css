@@ -110,3 +110,8 @@ button:hover{
     background-color: #000000;
     color: #fff;
   }
+
+
+.counterSpan{
+  font-size: 30px;
+}  

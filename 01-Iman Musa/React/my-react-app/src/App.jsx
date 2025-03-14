@@ -3,9 +3,21 @@ import Todo from './components/todo'
 import Heading from './components/heading'
 import Popup from './components/popup'
 import { useState } from 'react'
+import Counter from './components/counter'
 
 function App() {
     
+
+
+  return(
+    <>
+    {/* Counter */}
+    <Counter/>  
+    </>
+  )
+
+
+
     // useState()
     // making the code reactive now
 
@@ -66,7 +78,6 @@ function App() {
       */}
       {/* Done */}
       {/* Done */}
-
 
     </>
   )

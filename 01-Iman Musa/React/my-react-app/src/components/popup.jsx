@@ -1,4 +1,4 @@
-function Popup({ custom }){
+function Popup ({ custom }){
     // task + my stuff
     function clickedConfirm (){
         console.log("You clicked Confirm");
