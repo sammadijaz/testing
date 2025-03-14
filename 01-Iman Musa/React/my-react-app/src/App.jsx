@@ -2,15 +2,23 @@ import './App.css'
 import Todo from './components/todo'
 import Heading from './components/heading'
 import Popup from './components/popup'
+import { useState } from 'react'
 
 function App() {
-  // useState()
-  let popupOpen = false;
-  function togglePopup(){
-    popupOpen = !popupOpen;
-    console.log(popupOpen);
-  }
-  // This won't trigger our popup because they are regular javascript variables and they dont check and re-render when variable changes 
+    
+    // useState()
+    // making the code reactive now
+
+    const [popupOpen, setPopupOpen] = useState(false);
+    // giving 'false' as a default state for 'popupOpen' variable.
+   
+    // first variable stores the arguement that we passed in useState() as the default value, in our case it is false. 
+   
+    // second varible stores a function that changes the value of the first variable by accepting arugement example: setPopupOpen(true).
+
+    // console.log(`This is popupOpen: ${popupOpen}`);
+    // console.log(`This is setPopupOpen: ${setPopupOpen}`);
+
 
   return (
     <>
@@ -26,7 +34,11 @@ function App() {
           console.log(event.target.value);
         }} />
         
-        <button type="submit" onClick={togglePopup} >Make Task</button>
+        <button type="submit" onClick = {() => {
+          setPopupOpen(true)
+          // console.log(setPopupOpen);
+          }}
+          >Make Task</button>
       </div>
 
       {/* learning about props now */}
