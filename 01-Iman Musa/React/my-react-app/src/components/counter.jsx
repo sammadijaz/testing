@@ -7,6 +7,9 @@ function Counter (){
     const [count, setCount] = useState(0)
 
     
+    // task: make age respond to buttons without affecting name property
+    const [user, setUser] = useState({name:"Sam", age: 19})
+    
 
 
 
@@ -14,7 +17,8 @@ function Counter (){
 
     return(
         <>
-            <span className = "counterSpan">Counter: {count}</span>
+            {/* With simple userState variables */}
+            <span>Counter: { count }</span>
             <br />
             <button
                 // onClick = { () => {
@@ -30,7 +34,7 @@ function Counter (){
                 // like this:
 
                 onClick={() => {
-                    setCount((previousCount) => {previousCount + 1})
+                    setCount((previousCount) => { return previousCount + 1 })
                 }}
 
                 // now if we write "setCount((previousCount) => {previousCount + 1})" twice, it will implement both of them not just one
@@ -40,17 +44,75 @@ function Counter (){
 
             <button
             onClick={() => {
-                setCount((previousCount) => {previousCount - 1})
+                setCount((previousCount) => { return previousCount - 1})
             }}
             >Decrement</button>
 
             <button
             onClick = { () => {
                     setCount(0)
-                } }
+                }}
             >Reset</button>
+
+        <br /><br /><br />    
         
         
+
+        {/* Now with objects: */}  
+        <span>Objects | { user.name }: { user.age } </span> 
+        <br />
+        <button
+            onClick={() => {
+                setUser((previousUser) => {
+                    return {
+                        ...previousUser,
+                        age: previousUser.age + 1
+                    }                     
+                })
+            }}
+        >+1 in age</button>
+
+        <button
+            onClick={() =>{
+                setUser((previousUser) => {
+                    return {
+                        ...previousUser,
+                        age: previousUser.age - 1
+                     }
+                })
+            }}
+        >-1 in age</button>       
+
+        <button
+            onClick={() => {
+                setUser((previousUser) => {
+                    return{
+                        ...previousUser,
+                        age: 19
+                    }
+                })
+            }}
+        >Reset</button>
+
+        <br /><br /><br />  
+
+        {/* Now with Arrays */}
+        <span>Arrays | </span>
+        <br />
+        <button
+        
+        ></button>
+
+        <button
+
+        ></button>
+        
+        <button
+        
+        ></button>
+
+
+
         </>
 
     )
