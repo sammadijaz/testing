@@ -3,12 +3,17 @@ import { useState } from "react";
 
 function Counter (){
 
-
+    // useState() with normal variables
     const [count, setCount] = useState(0)
 
     
+    // useState() with objects
     // task: make age respond to buttons without affecting name property
     const [user, setUser] = useState({name:"Sam", age: 19})
+
+
+    // useState() with arrays
+    const [myArr, setMyArr] = useState([])
     
 
 
@@ -92,24 +97,45 @@ function Counter (){
                     }
                 })
             }}
-        >Reset</button>
+        >Reset Object</button>
 
         <br /><br /><br />  
 
+
+
         {/* Now with Arrays */}
-        <span>Arrays | </span>
+        {/* After learning to use useState() with objects, arrays are pretty much the same thing */}
+        <span>Arrays | { myArr.toString() } </span>
         <br />
         <button
-        
-        ></button>
+        onClick={() => {
+            setMyArr((previousArray) => {
+                return [
+                    ...previousArray,
+                    ' +1'
+                ]
+            })
+        }}
+        >+1 in Array</button>
 
         <button
-
-        ></button>
+            onClick={() => {
+                setMyArr((previousArray) => {
+                    return [
+                        ...previousArray,
+                        ' −1'
+                    ]
+                })
+            }}
+        >-1 in Array</button>
         
         <button
-        
-        ></button>
+            onClick={() => {
+                setMyArr((previousArray) => {
+                    return []
+                })
+            }}
+        >Reset Array</button>
 
 
 
